@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 1 - 임영훈</title>
+    
+    <style>
+        ul {
+            list-style: none; /* 불릿 없앰 */
+        }
+
+        li {
+            display: inline-block; /* 인라인과 인라인블럭 차이점, 인라인 블럭은 가로 세로 지정이 가능 */
+            width: 120px;
+            margin: 10px;
+        }
+
+        li > a {
+            text-decoration: none; /* 밑줄 없앰*/
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+
+        a[herf] {
+            background-color: rgb(253, 194, 255); /* 속성에 스타일을 적용 , 띄어쓰기 x */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴 : </a></li>
+        <li><a href="#">메뉴 1 :</a></li>
+        <li><a href="#">메뉴 2 :</a></li>
+        <li><a href="#">메뉴 3 :</a></li>
+        <li><a href="#">메뉴 4 :</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 3 - 임영훈</title>
+    
+    <style>
+        ul {
+            list-style: none; /* 불릿 없앰 */
+        }
+
+        li {
+            display: inline-block; /* 인라인과 인라인블럭 차이점, 인라인 블럭은 가로 세로 지정이 가능 */
+            width: 120px;
+            margin: 10px;
+        }
+
+        li > a {
+            text-decoration: none; /* 밑줄 없앰*/
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+
+        .flat {
+            background-color: aqua;
+            color: rgb(40, 2, 49);
+        }
+
+        [class ~= "button"] {   /* 물결은 포함된 것 이라는 뜻, 클래스 속성에 버튼 이라는 값이 포함되어 있으면 스타일 지정, 포함관계를 나타냄 */
+            border: 2px solid black;
+            box-shadow: fgba(0,0,0,0.3) 5px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">메뉴 1 : </a></li>
+        <li><a href="#">메뉴 2 : </a></li>
+        <li><a href="#" class="button">메뉴 3 : </a></li>
+        <li><a href="#" class="flat butoon">메뉴 4 : </a></li>
+    </ul>
+</body>
+</html>
