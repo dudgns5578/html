@@ -7,10 +7,11 @@
     <title>Transform 4 - 임영훈</title>
     <style>
         .origin {
-            width: 200px;
-            height: 134px;
+            width: 160px;
+            height: 240px;
             margin: 40px;
             float: left;
+            border: 1px solid black;
         }
         .rose {
             -webkit-transform: rotateZ(10deg);
@@ -19,6 +20,39 @@
             -o-transform: rotateZ(10deg);
             transform: rotateZ(10deg);
         }
+        .ltop .rose {
+            -webkit-transform: left top;
+            -ms-transform: left top;
+            -moz-transform: left top;
+            -o-transform: left top;
+            transform-origin: left top;
+        }
+
+        .rtop .rose {
+            -webkit-transform: right top;
+            -ms-transform: right top;
+            -moz-transform: right top;
+            -o-transform: right top;
+            transform-origin: right top;
+        }
+
+        .lbottom .rose {
+            -webkit-transform: left bottom;
+            -ms-transform: left bottom;
+            -moz-transform: left bottom;
+            -o-transform: left bottom;
+            transform-origin: left bottom;
+        }
+
+        .rbottom .rose {
+            -webkit-transform: right bottom;
+            -ms-transform: right bottom;
+            -moz-transform: right bottom;
+            -o-transform: right bottom;
+            transform-origin: right bottom;
+        }
+        
+        
     </style>
 </head>
 <body>
