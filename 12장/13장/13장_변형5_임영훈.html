@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 4 - 임영훈</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            margin: 40px;
+            float: left;
+        }
+        .skewx {
+            -webkit-transform: rotateX(40deg);
+            -ms-transform: rotateX(40deg);
+            -moz-transform: rotateX(40deg);
+            -o-transform: rotateX(40deg);
+            transform: rotateX(40deg);
+        }
+
+        skewy {
+            -webkit-transform: rotateX(15deg);
+            -ms-transform: rotateX(15deg);
+            -moz-transform: rotateX(15deg);
+            -o-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+        }
+
+        skewxy {
+            -webkit-transform: rotateX(15deg);
+            -ms-transform: rotateX(15deg);
+            -moz-transform: rotateX(15deg);
+            -o-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="skewx">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewy">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewxy">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+</body>
+</html>

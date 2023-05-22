@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성 선택자 4 - 임영훈</title>
+        
+        <style>
+            li {
+                display: inline-block; /* 인라인과 인라인블럭 차이점, 인라인 블럭은 가로 세로 지정이 가능 */
+                width: 120px;
+                margin: 10px;
+            }
+
+            a[title ^= "eng"] {
+                background-image: url(images/us.png) no-repeat left center;
+                padding:  5px 25px;
+            }
+            
+            a[title ^= "chin"] {
+                background-image: url(images/ch.png) no-repeat left center;
+                padding:  5px 25px;
+            }
+            
+            a[title ^= "jap"] {
+                background-image: url(images/jp.png) no-repeat left center;
+                padding:  5px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>외국어 서비스 : </li>
+            <li><a href="#" title="english">영어</a></li>
+            <li><a href="#" title="chinese">중국어</a></li>
+            <li><a href="#" title="japanese">일본어</a></li>
+        </ul>
+    </body>
+</html>
