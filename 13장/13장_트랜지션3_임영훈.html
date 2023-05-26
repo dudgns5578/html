@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 3 - 임영훈</title>
+
+    <style>
+        .tr {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: rgb(255, 127, 227);
+            transition-property: width, height, background-color, transform; /* 속성을 가로와 세로, 배경, 트랜스폼에 줌 */
+            transition-duration: 2s;    /* 2초 안에 크기, 색깔, 회전, 하나만 적으면 모두 똑같이 적용됨 */
+        }
+
+        .tr:hover {
+            width: 300px;
+            height: 300px;  /* 마우스 올리며 가로 세로 200px로 바뀜 */
+            background-color: blueviolet;   /* 마우스 올리면 배경색 바뀜 */
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tr">
+        <h1>임영훈</h1>
+    </div>
+</body>
+</html>

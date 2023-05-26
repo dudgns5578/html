@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 4 - 임영훈</title>
+
+    <style>
+        #ex div {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin: 5px 10px;
+            padding: 5px;
+            background-color: rgb(126, 95, 155);
+            color: aliceblue;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #ex:hover div {
+            height: 400px;
+        }
+
+        #ex .ease {
+            transition: 3s ease; /* 3초 동안 천천히 시작, 빨라졌다가 다시 천천히 끝남 *기본값임 */
+        }
+
+        #ex .linear {
+            transition: 3s linear; /* 3초 동안 일정한 속도로 트랜지션 진행 */
+        }
+
+        #ex .ease-in {
+            transition: 3s ease-in; /* 3초 동안 느리게 시작, 빠르게 끝 */
+        }
+
+        #ex .ease-out {
+            transition: 3s ease-out; /* 3초 동안 빠르게 시작, 느리게 끝*/
+        }
+
+        #ex .ease-in-out {
+            transition: 3s ease-in-out; /* 3초 동안 느리게 시작하고 느리게 끝 */
+        }
+    </style>
+</head>
+<body>
+    <div id="ex">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 2 - 임영훈</title>
+
+    <style>
+        .tr1 {
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            background-color: aquamarine;
+            transition-property: width, height; /* 속성을 가로와 세로에 줌*/
+            transition-duration: 2s, 3s;    /* 가로 커지는 속도 2초와 세로 커지는 속도 3초*/
+        }
+
+        .tr1:hover {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

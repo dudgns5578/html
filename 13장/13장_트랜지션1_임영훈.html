@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 1 - 임영훈</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 30px;
+        }
+
+        .bg-tr:hover {
+            background-color: aquamarine;
+        }
+
+        .border-tr {
+            background-color: rgb(94, 94, 287);
+            border: 3px solid black;
+            transition: all linear 1.5s;  /* 보더 테두리와, 보더 레디우스에 전부 스타일을 적용 */
+        }
+
+        .border-tr:hover {
+            border: 3px solid red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-tr"></div>
+
+    <div class="border-tr"></div>
+</body>
+</html>

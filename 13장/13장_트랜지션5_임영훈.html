@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>트랜지션 5 - 임영훈</title>
+
+        <style>
+            #ex {
+                width: 500px;
+                height: 150px;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 30px;
+                border: 1px solid black;
+                position: relative;
+            }
+
+            #ex:hover .box {
+                margin-left: 420px; /* 마우스 올리면 마진 왼쪽을 크게 줌 */
+                transform: rotate(720deg);  /* 마우스 올리면 720도로 돌면서 움직임 */
+            }
+
+            .box {
+                position: relative;
+                width: 60px;
+                height: 60px;
+                background-color: rgb(238, 116, 218);
+                margin-bottom: 10px; /* 두 개로 나눠짐 */
+            }
+
+            #no-delay {
+                transition-duration: 3s;    /* 3초 동안 움직임, 왼쪽으로 , 애니메이션 처럼 보이게 함 */
+                border: 2px solid blueviolet;
+            }
+
+            #delay {
+                transition-duration: 3s;
+                transition-delay: 1s;   /* 1초 딜레이 된 후 시작 */
+                border: 2px solid purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ex">
+            <div class="box" id="no-delay">no-delay</div>
+            <div class="box" id="delay">delay</div>
+        </div>
+    </body>
+</html>
