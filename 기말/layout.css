@@ -1,0 +1,120 @@
+/* style.css */
+
+/* 전체적인 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 음악 차트 스타일 */
+.small-chart {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.chart-container {
+    width: 200px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.chart-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chart-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chart-container li {
+    margin-bottom: 10px;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.music-container {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.music-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.music-container audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.music-container a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.music-container a:hover {
+    background-color: #45a049;
+}
+
+/* 검색 스타일 */
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .chart {
+        grid-template-columns: 1fr;
+    }
+}

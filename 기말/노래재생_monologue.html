@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음악 재생 페이지</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container Styles */
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Album Image Styles */
+.album-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Lyrics Styles */
+.lyrics-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.lyrics {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* Add column-related styles */
+  column-count: 3;
+  column-gap: 20px;
+  text-align: center;
+}
+
+/* Audio Player Styles */
+.audio-player {
+  margin-top: 20px;
+  
+}
+
+/* Custom CSS */
+/* Replace the styles below with your custom CSS */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.play-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #97bada;
+}
+
+  </style>
+</head>
+
+<body>
+  <a class="button-link" href="메인화면_임영훈.html">메인 화면으로 이동</a>
+  <div class="container">
+    <img class="album-image" src="images/monologue.jpg" alt="앨범 사진">
+    <div class="lyrics-container">
+      <h2>노래 가사</h2>
+      <div class="lyrics">
+        <p>다 잊었다는 거짓말<br>
+          또 해 버렸죠<br>
+          내 마음에 그대란 사람<br>
+          없다고 했죠<br>
+          너무나 쉽게 잊혀졌다고<br>
+          이젠 남이라고<br>
+          서툰 내 사랑에 지쳐 떠난 그대<br>
+          너무 많이 울려서<br>
+          잡을 용기조차 낼 수 없었죠<br>
+          미안해요 내 사랑아<br>
+          다신 나 같은 사람 만나지 마요<br>
+          혹시 찾아가도 두 번 다시<br>
+          나를 허락해 주지 마요<br>
+          그댄 여리고 너무 착해서<br>
+          싫단 말도 잘 못하는데<br>
+          많이 부족한 나를 사랑한 그대<br>
+          이거면 됐어요 더 이상은<br>
+          그대 불행하지 않도록<br>
+          나 이쯤에서 없어지는 게<br>
+          그댈 위한 나의 사랑인 걸요<br>
+          너무 투명해서 때론 불안했죠<br>
+          제멋대로 살아온 나를<br>
+          감당할 수 없을 것 같죠<br>
+          미안해요 내 사랑아<br>
+          다신 나 같은 사람 만나지 마요<br>
+          혹시 찾아가도 두 번 다시<br>
+          나를 허락해 주지 마요<br>
+          그댄 여리고 너무 착해서<br>
+          싫단 말도 잘 못하는데<br>
+          고마웠어요 나를 사랑해 줘서<br>
+          나 같은 사람이 두 번 다시<br>
+          감히 받을 수 없는 사랑<br>
+          그대 때문에 행복했어요<br>
+          울지 마요 그대<br>
+          잘 생각해 봐요<br>
+          나쁜 일들만 가득했던 우리<br>
+          다 잊어야 해요<br>
+          다신 나 같은 사람 만나지 마요<br>
+          혹시 찾아가도 두 번 다시<br>
+          나를 허락해 주지 마요<br>
+          그댄 여리고 너무 착해서<br>
+          싫단 말도 잘 못하는데<br>
+          많이 부족한 나를 사랑한 그대<br>
+          이거면 됐어요<br>
+          더 이상은 그대 불행하지 않도록<br>
+          나 이쯤에서 없어지는 게<br>
+          그댈 위한 나의 사랑인 걸요<br>
+        <!-- Add the remaining lyrics lines here -->
+      </div>
+    </div>
+    <div class="audio-player">
+      <h2>노래 재생</h2>
+      <audio controls>
+        <source src="song/monologue_테이.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <p>출처 : 유튜브</p>
+</body>
+
+</html>

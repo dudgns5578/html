@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음악 재생 페이지</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container Styles */
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Album Image Styles */
+.album-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Lyrics Styles */
+.lyrics-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.lyrics {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* Add column-related styles */
+  column-count: 4;
+  column-gap: 20px;
+  text-align: center;
+}
+
+/* Audio Player Styles */
+.audio-player {
+  margin-top: 20px;
+  
+}
+
+/* Custom CSS */
+/* Replace the styles below with your custom CSS */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.play-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #97bada;
+}
+
+  </style>
+</head>
+
+<body>
+  <a class="button-link" href="메인화면_임영훈.html">메인 화면으로 이동</a>
+  <div class="container">
+    <img class="album-image" src="images/나의x에게.jpg" alt="앨범 사진">
+    <div class="lyrics-container">
+      <h2>노래 가사</h2>
+      <div class="lyrics">
+        <p>우리 다시 만날래<br>
+          예쁘게 빛나던<br>
+          모든 추억들이<br>
+          너무 그리워<br>
+          너의 품에 안길래<br>
+          이 밤이 새도록<br>
+          네게 말할 거야<br>
+          너를 좋아한다고<br>
+          안녕 그대야<br>
+          요즘 어떻게 지내<br>
+          가로수길 걷다가<br>
+          생각이 나서<br>
+          행복해 보이는 사람들 속에<br>
+          우리 둘만 없어서<br>
+          어색했었어<br>
+          늘 집에 갈 땐<br>
+          항상 뒤돌아보면<br>
+          날 보며 웃어주던<br>
+          네가 생각났어<br>
+          우리 다시 만날래<br>
+          예쁘게 빛나던<br>
+          모든 추억들이<br>
+          너무 그리워<br>
+          너의 품에 안길래<br>
+          이 밤이 새도록<br>
+          네게 말할 거야<br>
+          너를 좋아한다고<br>
+          토요일마다 가던<br>
+          한강공원에<br>
+          이어폰 하나씩<br>
+          나눠끼고서<br>
+          벚꽃엔딩같이 듣고 있으면<br>
+          부러울 게 없었어<br>
+          너만 있으면<br>
+          널 사랑할 때<br>
+          내가 너무 그리워<br>
+          날 보며 웃어주던<br>
+          네가 보고 싶어<br>
+          우리 다시 만날래<br>
+          예쁘게 빛나던<br>
+          모든 추억들이<br>
+          너무 그리워<br>
+          너의 품에 안길래<br>
+          이 밤이 새도록<br>
+          네게 말할 거야<br>
+          너를 좋아한다고<br>
+          같이 별 보러 갈래<br>
+          널 다시 만나면<br>
+          네 옆에 기대서<br>
+          잠들고 싶어<br>
+          너의 품에 안길래<br>
+          이 밤이 새도록<br>
+          내 곁에 있어줘<br>
+          내겐 너뿐이라고<br>
+        <!-- Add the remaining lyrics lines here -->
+      </div>
+    </div>
+    <div class="audio-player">
+      <h2>노래 재생</h2>
+      <audio controls>
+        <source src="song/나의x에게_경서.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <p>출처 : 유튜브</p>
+</body>
+
+</html>

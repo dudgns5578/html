@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음원 다운로드 사이트 - 메인화면</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <style>
+        /* CSS 스타일 작성 */
+
+        
+
+        .rectangle {
+            width: 170px;
+            height: 720px;
+            background-color: rgb(184, 184, 184);
+            position: fixed;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 50px;
+            bottom: 90px;
+        }
+
+        .image-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 40px;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 140px;
+            height: 140px;
+            padding: 10px;
+        }
+        
+        .image-item .image-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+            margin-top: 30px;
+            position: relative;
+            bottom: 20px;
+        }
+
+        #A {
+            position: fixed;
+            /* 요소를 뷰포트(브라우저 창)를 기준으로 이동시킵니다. */
+            bottom: 300px;
+            left: 50px;
+        }
+
+        h1 {
+            position: fixed;
+            top: 40px;
+            margin-right: 40px;
+        }
+
+        .chart-container {
+            margin-top: 150px;
+            margin-right: 60px;
+            margin-left: 40px;
+            width: 220px;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .chart-container h2 {
+            margin-top: 5px;
+        }
+
+        .chart-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .chart-container li a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        
+        .chart-container li a:hover {
+            color: #4CAF50;
+        }
+
+        .chart-container li {
+            margin-bottom: 10px;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .chart {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .music-container {
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .music-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .music-container audio {
+            width: 100%;
+        }
+
+        .small-chart {
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Music Player</h1>
+
+    <div class="rectangle">
+        <p><a href="내프로필.html">나의 프로필</a></p>
+        <p>좋아요 누른 곡</p>
+        <p>재생목록</p>
+        <p>비슷한 곡</p>
+    </div>
+
+    <div class="image-container">
+        <div class="image-item">
+            <a href="카테고리_발라드.html">
+                <img src="images/카테고리 발라드.PNG" alt="발라드">
+                <div class="image-text">발라드</div>    
+            </a>
+        </div>
+
+        <div class="image-item">
+            <a herf="">
+                <img src="images/카테고리 팝송.PNG" alt="팝송">
+                <div class="image-text">팝송</div>
+            </a>
+            </div>
+
+        <div class="image-item">
+            <a herf="">
+                <img src="images/카테고리 힙합.PNG" alt="힙합">
+                <div class="image-text">힙합</div>
+            </a>
+        </div>
+
+        <div class="image-item">
+            <a href="">
+                <img src="images/카테고리 인디뮤직.PNG" alt="인디뮤직">
+                <div class="image-text">인디뮤직</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="small-chart">
+        <div class="chart-container">
+            <h2>인기음악 차트</h2>
+            <ul id="popular-chart-list">
+                <li><a href="노래재생_취중고백.html">취중고백 - 김민석</a></li>
+                <li><a href="노래재생_모든날모든순간.html">모든날모든순간 - 폴킴</a></li>
+                <li><a href="노래재생_난너를.html">난, 너를 - 김필</a></li>
+                <li><a href="노래재생_내가아니라도.html">내가 아니라도 - 주호</a></li>
+                <li><a href="노래재생_monologue.html">Monologue - 테이</a></li>
+            </ul>
+        </div>
+
+        <div class="chart-container">
+            <h2>신규 음악 차트</h2>
+            <ul id="new-chart-list">
+                <li><a href="노래재생_너의모든순간.html">너의 모든 순간 - 성시경</a></li>
+                <li><a href="노래재생_마지막사랑.html">마지막 사랑 - 신예영</a></li>
+                <li><a href="노래재생_잘가요.html">잘가요 - 주호</a></li>
+                <li><a href="노래재생_나의X에게.html">나의 X에게 - 경서</a></li>
+                <li><a href="노래재생_다시만날수있을까.html">다시 만날 수 있을까 - 임영웅</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <h2 id="A">카테고리</h2>
+
+</body>
+
+</html>

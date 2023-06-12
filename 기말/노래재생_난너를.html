@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음악 재생 페이지</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container Styles */
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Album Image Styles */
+.album-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Lyrics Styles */
+.lyrics-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.lyrics {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* Add column-related styles */
+  column-count: 3;
+  column-gap: 20px;
+  text-align: center;
+}
+
+/* Audio Player Styles */
+.audio-player {
+  margin-top: 20px;
+  
+}
+
+/* Custom CSS */
+/* Replace the styles below with your custom CSS */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.play-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #97bada;
+}
+
+  </style>
+</head>
+
+<body>
+  <a class="button-link" href="메인화면_임영훈.html">메인 화면으로 이동</a>
+  <div class="container">
+    <img class="album-image" src="images/난너를.jpg" alt="앨범 사진">
+    <div class="lyrics-container">
+      <h2>노래 가사</h2>
+      <div class="lyrics">
+        <p>어떤 말들이 어떤 하루가<br>
+          내게 남아 있는 걸까<br>
+          아닌 척해도 너를 찾지 않아도<br>
+          또다시 널 기다린다<br>
+          널 사랑했던 그날들이<br>
+          나의 시간 속에 살아<br>
+          어느 날이 와도 널 잊을 순 없을 거 같아<br>
+          너를 난 너를 난 너를<br>
+          너는 별처럼 나의 하늘에<br>
+          닿을 수 없는 아름다움<br>
+          바람처럼 와 한철 꽃을 피우고<br>
+          계절처럼 멀어져 가네<br>
+          널 사랑했던 그날들이<br>
+          나의 시간 속에 살아<br>
+          어느 날이 와도 널 잊을 순 없을 거 같아<br>
+          너를 난 너를 난 너를<br>
+          나의 세상을 수놓았던<br>
+          우리 기억이 점점 잡을 수 없는 멀리<br>
+          사라진대도<br>
+          기억해 줘 내 사랑을<br>
+          좀 더 간직해 줘 나를<br>
+          다신 돌아올 수 없는 날들이라고 해도<br>
+          너를 난 너를 난 너를<br>
+          남겨둘게<br>
+        <!-- Add the remaining lyrics lines here -->
+      </div>
+    </div>
+    <div class="audio-player">
+      <h2>노래 재생</h2>
+      <audio controls>
+        <source src="song/난너를_김필.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <p>출처 : 유튜브</p>
+</body>
+
+</html>
