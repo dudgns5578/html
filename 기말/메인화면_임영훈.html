@@ -147,6 +147,81 @@
             display: flex;
             justify-content: flex-start;
         }
+
+        .image-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 40px;
+            text-align: center;
+            perspective: 1000px;
+            transition: transform 0.5s;
+        }
+        
+        .image-item:hover {
+            transform: rotateY(360deg);
+        }
+        
+        .image-item img {
+            transition: transform 0.5s;
+        }
+        
+        .image-item:hover img {
+            transform: scale(1.2);
+        }
+        
+        .image-item .image-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+            margin-top: 30px;
+            position: relative;
+            bottom: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .image-item:hover .image-text {
+            opacity: 1;
+        }
+        
+        .notice-container {
+            margin-top: 150px;
+            margin-right: 60px;
+            margin-left: 400px;
+            width: 320px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            height: 340px;
+        }
+
+        .notice-container h2 {
+            margin-top: 5px;
+        }
+
+        .notice-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .notice-container li a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .notice-container li a:hover {
+            color: #4CAF50;
+        }
+
+        .notice-container li {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -155,9 +230,6 @@
 
     <div class="rectangle">
         <p><a href="내프로필.html">나의 프로필</a></p>
-        <p>좋아요 누른 곡</p>
-        <p>재생목록</p>
-        <p>비슷한 곡</p>
     </div>
 
     <div class="image-container">
@@ -213,6 +285,16 @@
             </ul>
         </div>
     </div>
+
+    <div class="notice-container">
+        <h2>공지사항</h2>
+        <ul id="notice-list">
+            <li><a href="#">서비스 업데이트 안내</a></li>
+            <li><a href="#">이벤트 안내: 음악 추천 이벤트</a></li>
+            <li><a href="#">유지보수 공지: 일시적인 서비스 중단 예정</a></li>
+        </ul>
+    </div>
+
 
     <div class="search-container">
         <input type="text" id="search-input" placeholder="Search">
